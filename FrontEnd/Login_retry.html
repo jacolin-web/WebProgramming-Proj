@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<!--Here we're implementing bootstrap for the navigation other items-->
+  <head>
+    <title>PLAY ON</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="WPFCSS.css">
+<!--This is the script for the audio javascript--> 
+<link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="audio.min.js"></script>
+     <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+<!--End of audio javascript-->
+  </head>
+
+  <body>
+
+<!--This will be our navigation system--> 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="MainPage.html">PlayON</a>
+        </div>
+        
+<!--This the actual navigation buttons-->        
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="MainPage.html">Home</a></li>
+          </ul>
+	
+<!-- This is the Sign Up and Register Buttons-->
+	<ul class="nav navbar-nav navbar-right">
+          
+	<li><a href="SignUpPage.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="LogIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     </ul>
+    </div></div></nav>
+<!--This is the end of our navigation-->
+
+<!--This is the beginning of the content-->
+      <br>
+      <br>
+      <br>
+      <br>
+ <div class="container">
+      <h2>Log In</h2>
+      <form name="form" method="post" action="LoggingIn.php">
+        <div class="form-group">
+          <label for="myusername">Username:</label>
+          <input type="text" class="form-control" name="myusername" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="mypassword">Password:</label>
+          <input type="password" class="form-control" name="mypassword" placeholder="Enter password">
+        </div>
+           <div style="color:red">
+             <p>The Username or password you entered is invalid.</p>
+          </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
