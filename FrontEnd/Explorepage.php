@@ -1,4 +1,3 @@
-@@ -0,0 +1,74 @@
 <html>
 <!--Here we're implementing bootstrap for the navigation other items-->
 	<head>
